@@ -1,0 +1,288 @@
+
+<=============================================>
+the App
+<=============================================>
+
+.divcontainer {
+
+width: 800px;
+border: solid black 2px;
+text-align: center;
+}
+	
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+h1 {
+  background-color:#115E9C;
+  color: white;
+  margin-right: 0px;
+  margin-top:0px;
+}
+
+h3 {
+  color:#115E9C;
+}
+
+.displayicons {
+  float: left;
+  display: inline;
+}
+
+<============================================>
+navigation bar
+<============================================>
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+
+.h2, h2 {
+    font-size: 2rem;
+    padding-left: 20%;
+}
+
+
+.bg-light {
+    background-color: #17a2b8!important;
+    width: 100%;
+}
+
+.h3, h3 {
+    font-size: 1.10rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+#tips
+{
+    width: 200px;
+    font-weight: 500;
+}
+
+
+p#pTagTips
+{
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#tipsLink
+{
+    margin-top: 50px;
+}
+
+#borderBottomLine
+{
+    border-bottom: 2px solid #47748b;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+
+
+
+
+<============================================>
+sidebar styling 
+<============================================>
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #ffffff;
+    color: #000;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #ffffff;
+    color: #8c8a8a;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #ffffff;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #000000
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    font-weight: 500;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+    margin-top: -22px;
+    font-weight: 500;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* -------s--------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100h;
+    transition: all 0.3s;
+    position: absolute;
+}
+
+
+
+
+
